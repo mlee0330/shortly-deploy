@@ -2,15 +2,15 @@
   "name": "shortly-express",
   "version": "0.0.1",
   "description": "shortly using express",
+  "engines": {
+    "node": "0.12.7"
+  },
   "main": "index.js",
   "repository": "",
   "license": "Proprietary",
   "private": true,
   "scripts": {
-    "start": "node index.js",
-  "engines" :{
-    "node": "0.12.7"
-  }
+    "start": "node index.js"
   },
   "dependencies": {
     "knex": "~0.5.7",
