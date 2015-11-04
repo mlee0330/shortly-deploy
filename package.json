@@ -7,7 +7,10 @@
   "license": "Proprietary",
   "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+  "engines" :{
+    "node": "0.12.7"
+  }
   },
   "dependencies": {
     "knex": "~0.5.7",
