@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 
     nodemon: {
       dev: {
-        script: 'server.js'
+        script: 'index.js'
       }
     },
 
@@ -35,8 +35,7 @@ module.exports = function(grunt) {
     jshint: {
       files: {
         // Add filespec list here
-        src: ['Gruntfile.js', 'lib/*.js', 'app**/*.js', 'public/client/*.js', 'server.js',
-             'index.js']
+        src: ['Gruntfile.js', 'lib/*.js', 'app/**/*.js', 'public/client/*.js', 'server.js', 'index.js']
       },
       options: {
         force: 'true',
@@ -74,8 +73,8 @@ module.exports = function(grunt) {
     },
 
     shell: {
-      prodServer: { command: ['git add .', 'git commit -m please work', 'git push
-                              heroku master'].join('&&')
+      prodServer: { 
+        command: ['git add .', 'git commit -m "please work"', 'git push heroku master'].join('&&')
       }
     },
   });
@@ -127,6 +126,5 @@ module.exports = function(grunt) {
   ]);
 
   //grunt.registerTask('default', ['concat']);
-
 
 };
