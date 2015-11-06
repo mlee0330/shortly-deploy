@@ -74,7 +74,7 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: { 
-        command: ['git add .', 'git commit -m "please work"', 'git push heroku master'].join('&&')
+        command: ['git push heroku master']
       }
     },
   });
